@@ -1,0 +1,74 @@
+\documentclass{beamer}
+\usetheme{Rochester}
+\usecolortheme{beetle}
+\usepackage{graphicx}
+\usepackage{color}
+%\setbeamertemplate{frametitle continuation}{}
+
+\title[Torus]
+{QHE in Torus Geometry}
+\subtitle{Notes on symmetries}
+
+\author[Abhishek]
+{A.~Anand\inst{1}}
+
+\institute[IISERP]
+{
+  \inst{1}%
+  Indian Institute of Science Education and Research\newline
+  Pune
+}
+\date{Jan 21, 2021}
+\subject{Physics}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+\begin{frame}[plain] \titlepage \end{frame} 
+
+
+\begin{frame}                                                                                                                                                        
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]                                                                                                                                
+\end{frame} 
+\section{Introduction}
+\begin{frame}[noframenumbering,allowframebreaks]{Introduction}
+  Working in torus geometry is equivalent to imposing periodic boundary conditions on a parallelogram unit cell along both its lattice vectors. Say we have following parallelogram :
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=2.5in]{figures/pngs/unit_cell_torus.png}
+    \caption{Unit cell}
+    \label{fig1}
+  \end{figure}
+
+  Then we demand that the physical observables of the system should not change if any particle is translated by a vector
+  \begin{equation*}
+    \boldsymbol{L} = m\boldsymbol{L_1} + n\boldsymbol{L_2}\quad m,n\in \mathbb{Z}
+  \end{equation*}
+  Because such translation brings back the particle in the same position because of imposed pbc. So this is the first symmetry we have on torus geometry and we will see its implications on a qhe system next.
+  
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Magnetic Translation Operator}
+  In the absense of magnetic field, the generator of translation is canonical momenta. That is
+
+  \begin{align*}
+    T(\vec{a}) &= \text{exp}\left( \frac{\iota}{\hbar}{\vec{a}\cdot\boldsymbol{P}}\right) \\
+    \implies \quad T(\vec{a})\psi(\vec{x}) &= \psi(\vec{x}+\vec{a})
+  \end{align*}
+
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Referecens}
+\end{frame}
+\end{document}

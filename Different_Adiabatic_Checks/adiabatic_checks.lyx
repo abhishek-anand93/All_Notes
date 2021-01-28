@@ -1,0 +1,3341 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{subcaption}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{parskip}
+\usepackage{soul}
+\pagestyle{fancy}
+\fancyhead[L]{Abhishek Anand}
+\fancyhead[R]{}
+\fancyhead[C]{Notes on Adiabaticity Check}
+\setlength\extrarowheight{5pt}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+We have been studying different adiabatic paths for 
+\begin_inset Formula 
+\[
+H_{model}\rightarrow H_{Coulomb}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the presence of lowest 3 LLs.
+ These notes are meant to document all our findings.
+\end_layout
+
+\begin_layout Standard
+Apart from the usual path we have taken in the paper, where after introducing
+ a small cyclotron energy cost 
+\begin_inset Formula $\beta$
+\end_inset
+
+, we simply increase the 
+\begin_inset Formula $\lambda:0\rightarrow1$
+\end_inset
+
+.
+ Here we will probe some different regimes.
+\end_layout
+
+\begin_layout Standard
+Just to make sense of what we were doing, first lets take a look at the
+ adiabatic plot for system at 
+\begin_inset Formula $\nu=2/5$
+\end_inset
+
+ with config 
+\begin_inset Formula $(11,6)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/abhishek/Desktop/Sorted/PRL_paper2/Test/data/adiabatic25th.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $L=4$
+\end_inset
+
+ sector, the lowest energy states seem to come really close to each other.
+ We started off with checking different paths where the gap might be larger
+ than this path.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{1.
+ Changing the relative strengths of Pseudo-pots $V^{l}_{n_1,n_2}$ }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hrulefill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Our first try was to tune the strengths of all non-zero PPs systematically
+ to choose different parameter paths for adiabatic transformation.
+ By increasing the relative strengths for PPs between particles of different
+ LLs results in preference of different fillings of LLs over the path.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/only_00.pdf}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{$V^{
+\backslash
+alpha}_{0,0}
+\backslash
+rightarrow 20$}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/only_01.pdf}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{$V^{
+\backslash
+alpha}_{1,0}
+\backslash
+rightarrow 20$}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Adiabatic transformation $H_{Model}
+\backslash
+rightarrow H_{Coulomb}$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here, around 
+\begin_inset Formula $\lambda=0.68$
+\end_inset
+
+, the energy of gs of 
+\begin_inset Formula $l>0$
+\end_inset
+
+ goes below that of 
+\begin_inset Formula $l=0$
+\end_inset
+
+.
+ Hence the enegy of gs for 
+\begin_inset Formula $l=0$
+\end_inset
+
+ goes above 
+\begin_inset Formula $0$
+\end_inset
+
+ after that 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ Increasing 
+\begin_inset Formula $V_{0,0}^{\alpha}$
+\end_inset
+
+ means it will be harder for 
+\begin_inset Formula $LL=0$
+\end_inset
+
+ to accomodate more particles.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/only_02.pdf}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{$V^{
+\backslash
+alpha}_{2,0}
+\backslash
+rightarrow 20$}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/only_11.pdf}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{$V^{
+\backslash
+alpha}_{1,1}
+\backslash
+rightarrow 20$}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Adiabatic transformation $H_{Model}
+\backslash
+rightarrow H_{Coulomb}$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/only_12.pdf}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{$V^{
+\backslash
+alpha}_{2,1}
+\backslash
+rightarrow 20$}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/only_22.pdf}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{$V^{
+\backslash
+alpha}_{2,2}
+\backslash
+rightarrow 20$}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Adiabatic transformation $H_{Model}
+\backslash
+rightarrow H_{Coulomb}$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/21_20.pdf}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{$V^{
+\backslash
+alpha}_{2,1}, V^{
+\backslash
+alpha}_{2,0}
+\backslash
+rightarrow 20$}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/21_20_11.pdf}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{$V^{
+\backslash
+alpha}_{2,1}, V^{
+\backslash
+alpha}_{2,0}, V^{
+\backslash
+alpha}_{1,1}
+\backslash
+rightarrow 20$}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Adiabatic transformation $H_{Model}
+\backslash
+rightarrow H_{Coulomb}$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also made color plots measuring the gap in 
+\begin_inset Formula $L=4$
+\end_inset
+
+ over the paramter space of 
+\begin_inset Formula $(\beta,\lambda)$
+\end_inset
+
+ to scan different paths which might avoid the gap closing.
+ But as the plots suggest, there is no such path for 
+\begin_inset Formula $L=4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Desktop/Sorted/PRL_paper2/Test/data/colorplot_L4.pdf}
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Desktop/Sorted/PRL_paper2/Test/data/colorplot_l4_small.
+pdf} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also checked for the case where we only take the LLL components of 
+\begin_inset Formula $H_{coulomb}$
+\end_inset
+
+ as that is what we achieve later by 
+\begin_inset Formula $\beta\rightarrow2$
+\end_inset
+
+.
+ But as we see, this doesn't help much.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Desktop/Sorted/PRL_paper2/Test/data/colorplot_l4_LLL.pd
+f}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{Level crossing check using overlap :}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We wanted to check if there are points of level crossing when the levels
+ comes really close to each other.
+ For this, the overlap of 
+\begin_inset Formula $\psi_{i}^{L}(\lambda_{0}+\text{d}\lambda)$
+\end_inset
+
+, where 
+\begin_inset Formula $i=0,1,2,3$
+\end_inset
+
+ were taken with 
+\begin_inset Formula $\psi_{0}^{L}(\lambda_{0})$
+\end_inset
+
+, where 
+\begin_inset Formula $i=0$
+\end_inset
+
+ means the state with lowest energy in given 
+\begin_inset Formula $L$
+\end_inset
+
+ sector.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textcolor{red}{NOTE : The overlap checking is not a conclusive check for
+ level crossing!!!!}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/level_check/overlap_defaul
+t_l0.pdf}     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/level_check/overlap_defaul
+t_l1.pdf}      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/level_check/overlap_defaul
+t_l2.pdf}     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.4
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.8
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/level_check/overlap_defaul
+t_l3.pdf}      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Energies and overlap of $
+\backslash
+psi_{0}^{L}(
+\backslash
+lambda_{0})$ with $
+\backslash
+psi_{i}^{L}(
+\backslash
+lambda_{0}+
+\backslash
+text{d}
+\backslash
+lambda)$ for default $H_{Model}$ in $
+\backslash
+lambda
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+in [0.4,0.8]$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{For QH and QP in $
+\backslash
+nu=2/5$ and $1/3$ :}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Remember
+\begin_inset Formula 
+\begin{align}
+2Q^{*} & =2Q-2p(N-1)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in spherical geometry, where 
+\begin_inset Formula $2Q^{*}$
+\end_inset
+
+ is the effective flux seen by CF particles after 
+\begin_inset Formula $2p$
+\end_inset
+
+ vortices are attached to each of 
+\begin_inset Formula $N$
+\end_inset
+
+ electrons.
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $\nu=2/5$
+\end_inset
+
+, CFs fill 
+\begin_inset Formula $n=2$
+\end_inset
+
+ Landau-like levels.
+ Hence to find 
+\begin_inset Formula $(2Q,N)$
+\end_inset
+
+ configuration corresponding to 
+\begin_inset Formula $1$
+\end_inset
+
+-QP, condition is
+\begin_inset Formula 
+\begin{align*}
+(2Q*+1)+(2Q*+3) & =N-1\\
+4Q^{*}+4 & =N-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and for 
+\begin_inset Formula $1$
+\end_inset
+
+-QH case,
+\begin_inset Formula 
+\begin{align*}
+4Q^{*}+4 & =N+1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in both the cases, putting it back in eq 
+\begin_inset Formula $(1)$
+\end_inset
+
+, gives back us the relation, which helps us generate the required 
+\begin_inset Formula $(2Q,N)$
+\end_inset
+
+ configurations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{1-QH at $
+\backslash
+nu=2/5$ : $(9,5)$}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_9_5_2b5_l0p5.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_9_5_2b5_l1p5.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_9_5_2b5_l2p5.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_9_5_2b5_l3p5.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Energies and overlap in $
+\backslash
+lambda 
+\backslash
+in [0.4,0.8]$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{1-QP at $
+\backslash
+nu=1/3$ : $(11,5)$}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_11_5_1b3_l0p5.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_11_5_1b3_l1p5.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_11_5_1b3_l2p5.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_11_5_1b3_l3p5.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Energies and overlap in $
+\backslash
+lambda 
+\backslash
+in [0.4,0.8]$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{1-QP at $
+\backslash
+nu=2/5$ : $(8,5)$}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_8_5_2b5_l0.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_8_5_2b5_l1.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_8_5_2b5_l2.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_8_5_2b5_l3.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Energies and overlap in $
+\backslash
+lambda 
+\backslash
+in [0.4,0.8]$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{2-QP at $
+\backslash
+nu=2/5$ : $(10,6)$}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_10_6_2b5_l0.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_10_6_2b5_l1.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_10_6_2b5_l2.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_10_6_2b5_l3.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Energies and overlap in $
+\backslash
+lambda 
+\backslash
+in [0.4,0.8]$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{2-QP at $
+\backslash
+nu=1/3$ : $(10,5)$}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_10_5_1b3_l0.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_10_5_1b3_l1.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_10_5_1b3_l2.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_10_5_1b3_l3.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Energies and overlap in $
+\backslash
+lambda 
+\backslash
+in [0.4,0.8]$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{2-QH at $
+\backslash
+nu=2/5$ : $(12,6)$}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_12_6_2b5_l0.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_12_6_2b5_l1.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_12_6_2b5_l2.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_12_6_2b5_l3.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Energies and overlap in $
+\backslash
+lambda 
+\backslash
+in [0.4,0.8]$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{2-QH at $
+\backslash
+nu=1/3$ : $(14,5)$}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_14_5_2b5_l0.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_14_5_2b5_l1.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_14_5_2b5_l2.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{.35
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/lambda_epsilon/data/Overlaps_14_5_2b5_l3.pdf}
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Energies and overlap in $
+\backslash
+lambda 
+\backslash
+in [0.4,0.8]$} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:fig} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{Increasing $
+\backslash
+beta$ and $
+\backslash
+lambda$ linearly :}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this check, we test two system sizes 
+\begin_inset Formula $(20,8)$
+\end_inset
+
+ and 
+\begin_inset Formula $(11,6)$
+\end_inset
+
+.
+ From the results gathered from 
+\begin_inset Formula $(11,6)$
+\end_inset
+
+ system, we see a gap closing as shown below :
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/AllData_16_8/only_lambda/11_6/11_6_l0.pdf}
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Also, we compared the gap for 
+\begin_inset Formula $L=0$
+\end_inset
+
+ sector in these two system to check the effect of size, and found the gap
+ to be lesser in larger system.
+ Although this can be attributed to increasing 
+\begin_inset Formula $Q$
+\end_inset
+
+, which reduces the factors adding to cyclotron energy cost;r but the gap
+ is smaller than that of 
+\begin_inset Formula $(11,6)$
+\end_inset
+
+ even when taken the planar terms for cyclotron energy.
+ The plots comparing 
+\begin_inset Formula $L=0$
+\end_inset
+
+ gaps for 
+\begin_inset Formula $(11,6)$
+\end_inset
+
+ (left) and 
+\begin_inset Formula $(20,8)$
+\end_inset
+
+ (right) :
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[h]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}{
+\backslash
+textwidth}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=.7
+\backslash
+linewidth]{/home/abhishek/Dropbox/AllData_16_8/adiabatic_single.pdf}    
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
